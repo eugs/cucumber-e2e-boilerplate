@@ -1,6 +1,5 @@
 class Constants {
-    searchTerm = '@cucumber-e2e/po2 npm';
-    expectedUrl = 'https://www.npmjs.com/package/@cucumber-e2e/po'
+    GOOGLE_HOME = 'https://google.com';
 }
 
 module.exports = new Constants();

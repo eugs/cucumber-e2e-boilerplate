@@ -2,7 +2,7 @@ const { Before, After, setDefaultTimeout } = require('@cucumber/cucumber');
 const { po } = require('@cucumber-e2e/po2');
 const memory = require('@cucumber-e2e/memory2');
 const { remote } = require('webdriverio');
-const app = require('../page_object/App');
+const googleHome = require('../page_object/google/HomePage');
 const constants = require('../memory/constants');
 
 setDefaultTimeout(60000);
@@ -27,7 +27,7 @@ Before(async function () {
     po.init(browser, {
         timeout: 15000
     });
-    po.register(app);
+    po.register(googleHome);
     memory.register(constants);
 });
 

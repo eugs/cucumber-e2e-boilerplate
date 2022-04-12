@@ -104,3 +104,6 @@ dist
 .tern-port
 
 report/
+
+# MacOS
+.DS_Store

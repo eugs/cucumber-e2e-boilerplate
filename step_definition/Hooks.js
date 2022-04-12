@@ -3,6 +3,8 @@ const { po } = require('@cucumber-e2e/po2');
 const memory = require('@cucumber-e2e/memory2');
 const { remote } = require('webdriverio');
 const googleHome = require('../page_object/google/HomePage');
+const wikiHome = require('../page_object/wiki/HomePage');
+const articlePage = require('../page_object/wiki/ArticlePage');
 const constants = require('../memory/constants');
 
 setDefaultTimeout(60000);
@@ -24,11 +26,14 @@ Before(async function () {
         }
     );
 
+		memory.register(constants);
+
     po.init(browser, {
         timeout: 15000
     });
     po.register(googleHome);
-    memory.register(constants);
+    po.register(wikiHome);
+		po.register(articlePage);
 });
 
 After(async function() {

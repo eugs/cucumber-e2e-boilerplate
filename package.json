@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"postinstall": "mkdir ./report",
     "test": "cucumber-js --profile default"
   },
   "repository": {
@@ -24,6 +23,6 @@
     "@wdio/devtools-service": "^7.16.13",
     "chai": "^4.3.4",
     "vue-cucumber-html-reporter": "^0.2.2",
-    "webdriverio": "^7.16.13"
+    "webdriverio": "^7.19.4"
   }
 }

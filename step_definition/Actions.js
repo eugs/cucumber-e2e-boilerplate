@@ -1,4 +1,4 @@
-const { When } = require('@cucumber/cucumber');
+const { When, Then } = require('@cucumber/cucumber');
 const { po } = require('@cucumber-e2e/po2');
 const memory = require('@cucumber-e2e/memory2');
 

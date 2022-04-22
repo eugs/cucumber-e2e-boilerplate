@@ -1,5 +1,5 @@
 Feature: Wikipedia
-
+@test
 	Scenario: search in wikipedia
 		When open '$WIKI_HOME' url
 		 And type 'Alps' to 'Search Input'
